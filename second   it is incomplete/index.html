@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"rel="stylesheet">
+    <link rel="stylesheet" href="style.css ">
+    <link rel="icon" href="photoes/logo.png">
+    <title>Redponsive Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Slider Section --> 
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="photoes/logo.png">
+                    <h2>Dashboard<span class="danger">Prog</span>
+                    </h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="#">
+                    <span class="material-icons-sharp">dashboard</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">person_outline</span>
+                    <h3>User</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">receipt_long</span>
+                    <h3>History</h3>
+                </a>
+                <a href="#" class="active">
+                    <span class="material-icons-sharp">insights</span>
+                    <h3>Analytices</h3>
+                </a>
+                <a href="#" >
+                    <span class="material-icons-sharp">mail_outline</span>
+                    <h3>Tickets</h3>
+                    <span class="message-count">27</span>
+                </a>
+                <a href="#" >
+                    <span class="material-icons-sharp">inventory</span>
+                    <h3>Sale Liset</h3>
+                </a>
+                <a href="#" >
+                    <span class="material-icons-sharp">report_gmailerrorred</span>
+                    <h3>Report</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">settings</span>
+                    <h3>Settings</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">add</span>
+                    <h3>New Login</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- End of sidebar section-->
+
+
+        <!-- Main conten -->
+        <main>
+            <h1>Analytices</h1>
+            <div class="analytices">
+                <div class="sales">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Total Sales</h3>
+                            <h1>$65,024</h1>
+                        </div>
+                        <div class="progresss">
+                            <svg>
+                                <circle cx="38" cy="36" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>+81%</p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="visits">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Site Visits</h3>
+                            <h1>24,981</h1>
+                        </div>
+                        <div class="progresss">
+                            <svg>
+                                <circle cx="38" cy="36" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>-48%</p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="searches">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Searches</h3>
+                            <h1>14,147</h1>
+                        </div>
+                        <div class="progresss">
+                            <svg>
+                                <circle cx="38" cy="36" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>+21%</p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <!-- End of Analytices -->
+
+            <!-- new user section -->
+            <div class="new-user">
+                <h2>New Users</h2>
+                <div class="user-list">
+                    <div class="user">
+                        <img src="photoes/profile1.jpeg">
+                        <h1>Jackson</h1>
+                        <p>54 Min Ago</p>
+                    </div>
+                    <div class="user">
+                        <img src="photoes/profile2.jpeg">
+                        <h1>Jackson</h1>
+                        <p>54 Min Ago</p>
+                    </div>
+                    <div class="user">
+                        <img src="photoes/profile3.jpeg">
+                        <h1>Jackson</h1>
+                        <p>54 Min Ago</p>
+                    </div>
+                    <div class="user">
+                        <img src="photoes/plus.png">
+                        <h1>More</h1>
+                        <p>New user</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- new user section end -->
+            <!-- Recent order table -->
+            <div class="recent-order">
+                <h2>Recent Orders</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Course Name</th>
+                            <th>Course Number</th>
+                            <th>Payment</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <a href="#">Show All</a>
+            </div>
+            <!-- End of Recent Orders -->
+        </main>
+
+    </div>
+    <script src="index.js"></script>  
+</body>
+</html>
