@@ -90,9 +90,11 @@ footer{
     flex-direction: column;
 }
 #myprogressbar{
+    cursor: pointer;
     width: 80%;
 }
 .control span{
+    transition: all 3s ease-in-out;
     font-size: 35px;
 }
 .icon{
@@ -102,7 +104,6 @@ footer{
     position: absolute;
     left:10% ;
     opacity: 0;
-    transition: opacity 1s ease-in ;
 }
 .songinfo img{
     
