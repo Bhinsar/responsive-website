@@ -1,8 +1,7 @@
-console.log("jhatik")
 let songItem = 0;
 let audioElement = new Audio('photes/songs/1.mp3');
 let masterPlay = document.getElementById('play');
-let myProgreesBar = document.getElementById('myprogreesbar')
+let myProgreesBar = document.getElementById('myprogressbar')
 let gif = document.getElementById('gif')
 
 let song = [
@@ -29,6 +28,7 @@ masterPlay.addEventListener('click',()=>{
         gif.style.opacity=0;
     }
 })
-// myProgreesBar.addEventListener('timeupdate',()=>{
-
-// })
+audioElement.addEventListener('timeupdate',()=>{
+    let progress = parseInt((audioElement.currentTime/audioElement.duration)*100);
+    myProgreesBar.value = progress;
+})
